@@ -1,0 +1,15 @@
+syntax = "proto3";
+package game;
+
+option go_package = "pkg/grpc";
+
+message HelloRequest {
+    string body = 1;
+}
+message HelloResponse {
+    string body = 1;
+}
+
+service GameService {
+    rpc Hello(HelloRequest) returns (HelloResponse) {}
+}
