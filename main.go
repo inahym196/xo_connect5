@@ -1,9 +1,9 @@
 package main
 
 import (
-	"xo_connect5/infra"
+	"xo_connect5/infra/http"
 )
 
 func main() {
-	infra.Router().Run("127.0.0.1:8080")
+	http.Router().Run("127.0.0.1:8080")
 }
